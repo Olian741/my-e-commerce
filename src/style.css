@@ -1,18 +1,13 @@
 body{
   font-family: "Inter", system-ui;
+
 }
+
 :root{
     --main-color: #f5f5f5;
     --secondary-color: #000;
 }
 
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 li{
     list-style: none;
 }
@@ -20,14 +15,12 @@ li{
 a{
     text-decoration: none;
 }
-img{
+header.main img{
     height: auto;
 }
-
 button{
     cursor: pointer;
 }
-
 header.main .navbar ul{
     margin-right: 20px;  
 }
@@ -58,7 +51,6 @@ header.second .form-control {
     transition: all 200ms ease-in-out;   
 }
 
-
 header.second .form-control:hover {
     background-color: var(--main-color);  
     border-color: var(--main-color);  
@@ -70,18 +62,13 @@ header.second .btn-outline-black{
     border-color: var(--main-color);  
     transition: all 200ms ease-in-out;  
 }
-
 header.second .btn-outline-black:hover {
     background-color: var(--main-color);
     border-color: var(--main-color);  
 }
-
-
 .navbar-nav .dropdown-toggle::after {
     display: none;
 }
-
-
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; 
@@ -106,12 +93,11 @@ header.second .btn-outline-black:hover {
     color: var(--secondary-color) !important;
     cursor: pointer;
     font-weight: 500;
-
 }
 .home {
-  
-  width: 100vw;
+   width: 100vw;
   height: 100vh;
+  margin-bottom: 50px;
 }
 .home-image img {
   width: 100%;
@@ -121,20 +107,23 @@ header.second .btn-outline-black:hover {
 .home-text{
     color: var(--secondary-color);
     text-align: center;
-    paddig: 20px;
 }
 .home-text h1{
     font-weight:900;
+    font-size: 4rem;
 }
 .home-text p{
     font-weight: 500;
+    font-size: 20px;
     
 }
-.btn-outline-black {
+.home-text .btn-outline-black {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--secondary-color);
-  color: white; 
+  color: white;
+  position: relative;
+  z-index: 1; 
   border: 2px solid var(--secondary-color);
   border-radius: 30px;
   text-decoration: none;
@@ -142,8 +131,66 @@ header.second .btn-outline-black:hover {
   font-size: 16px;
   transition: 0.3s ease;
 }
-.btn-outline-black:hover {
+.home-text .btn-outline-black:hover {
 background-color: #fff;
   color: var(--secondary-color);
 }
 
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.sliderWrapper {
+  display: flex;
+}
+
+.sliderItem {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  width: 250px;
+  height: 350px;
+}
+
+.sliderImg {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--main-color);
+  cursor: pointer;
+  z-index: 10;
+}
+.slider-btn.left {
+  left: 10px;
+}
+.slider-btn.right {
+  right: 10px;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+ 
+
+ 
