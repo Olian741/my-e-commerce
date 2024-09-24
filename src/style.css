@@ -77,7 +77,6 @@ footer {
     display: block;
     margin-top: 0; 
 }
-
 .heading{
     font-size: 16px;
      font-weight: 500;
@@ -291,6 +290,23 @@ background-color: #fff;
   color: #808080;
   font-size: 16px;
   font-weight: 500;
+}
+.container .row img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+}
+.coloured-description{
+  color:#9E3500;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.model-description, .price{
+font-weight: 500;
+}
+.description{
+  font-weight: 500;
+  color: #808080;
 }
 
 
