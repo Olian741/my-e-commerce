@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   rightBtn.addEventListener("click", () => {
     sliderWrapper.scrollBy({ left: 300, behavior: "smooth" });
   });
-
   const secondSliderWrapper = document.querySelector(".second-slider-wrapper");
   const secondLeftBtn = document.querySelector(".second-slider-btn.left");
   const secondRightBtn = document.querySelector(".second-slider-btn.right");
@@ -21,3 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     secondSliderWrapper.scrollBy({ left: 300, behavior: "smooth" });
   });
 });
+function redirect() {
+  window.location.href = "confirmation.html";
+  
+}
+

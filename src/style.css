@@ -365,6 +365,24 @@ font-weight: 500;
 .sm{
   width: 30%;
 }
+.payButton{
+  height: 40px;
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary-color);
+ color:#fff;
+ font-size: 20px;
+ font-weight: 500;
+ border: none;
+ cursor: pointer;
+}
+.confirmation-container {
+  padding: 20px; 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center;
+  }
+
 
 
 
