@@ -12,10 +12,30 @@
 
 </head>
 <body>
-    <h1>Payment</h1>
-    <div class="payment"></div>
+    <h1 class="text-center payTitle mt-2">Payment</h1>
+    <p class="text-center payment-paragraph">Enter the following to confirm your order</p>
+    <div class="payment-container">
+    <div class="payment">
     <h2 class="payInfo">Personal Information</h2>
     <label>Name and Surname</label>
     <input type="text" placeholder="Enter your name" class="paymentDetails">
+    <label>Phone Number</label>
+    <input type="text" placeholder="Enter your contact number" class="paymentDetails">
+    <label>Address</label>
+    <input type="text" placeholder="Enter your address" class="paymentDetails">
+       <h1 class="payTitle">Card Information</h1>
+       <div class="cards"> 
+        <img src="./images/visa 2.png" alt="" width ="40"class="cardIcon">
+        <img src="./images/mastercard.png" alt="" width="40" class="cardIcon">
+       </div>
+       <input type="password" placeholder="Enter card number" class="paymentDetails">
+       <div class="cardInfo">
+        <input type="password" placeholder= "MM" class="paymentDetails sm">
+         <input type="password" placeholder= "YYYY"class="paymentDetails sm">
+          <input type="password" placeholder= "CVV" title= "Please enter at least 3 digits"required class="paymentDetails sm">
+       </div>
+       <button class="payButton">Checkout</button>
+       </div>
+    </div>
 </body>
 </html>

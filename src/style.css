@@ -321,7 +321,54 @@ font-weight: 500;
   cursor: pointer;
   border: none;
   font-size: 16px;
+  text-decoration: none;
 }
+.payment-paragraph{
+  font-size: 20px;
+}
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 50px;
+}
+.payment {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+}
+.paymentDetails {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+}
+.payInfo {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.cards{
+  display: flex;
+}
+.cardIcon{
+  margin-right:10px;
+}
+.cardInfo{
+  display: flex;
+  justify-content:space-between;
+}
+.sm{
+  width: 30%;
+}
+
+
+
+
 
 
 
