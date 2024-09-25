@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body, html{
   font-family: "Inter", system-ui;
   overflow-x: hidden;
@@ -308,6 +311,25 @@ font-weight: 500;
   font-weight: 500;
   color: #808080;
 }
+.buy-product {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #D3D4CE;
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
 
 
 
