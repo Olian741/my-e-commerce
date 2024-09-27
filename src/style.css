@@ -18,7 +18,6 @@ body .paymentHtml{
 li{
     list-style: none;
 }
-
 a{
     text-decoration: none;
 }
@@ -391,8 +390,11 @@ font-weight: 500;
   margin: 0 auto;
   text-align: center;
   }
-
-
+.jordan-logo {
+  display: flex;
+  justify-content: center; 
+  margin-top: 40px;
+}
 
 
 
