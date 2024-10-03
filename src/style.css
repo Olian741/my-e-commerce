@@ -64,7 +64,7 @@ header.second .form-control:hover {
 
 header.second .btn-outline-black{
     border-radius: 20px;  
-    color: var(--secondary-color0);
+    color: var(--secondary-color);
     border-color: var(--main-color);  
     transition: all 200ms ease-in-out;  
 }
@@ -90,7 +90,6 @@ footer {
 .shopping{
     width:100%;
     text-align: center;
-
 }
 .shop{
     font-size: 12px;
@@ -123,28 +122,27 @@ footer {
 }
 .home-text p{
     font-weight: 500;
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 .home-text .btn-outline-black {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--secondary-color);
-  color: white;
+  color: white !important;
   position: relative;
   z-index: 1; 
   border: 2px solid var(--secondary-color);
-  border-radius: 30px;
+  border-radius: 30px !important;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   transition: 0.3s ease;
-  z-index: 1;
   position: relative;
 }
 .home-text .btn-outline-black:hover {
 background-color: #fff;
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
+border: 2px solid var(--secondary-color) !important;
 }
 .slider-container{
   position: relative;
@@ -209,7 +207,7 @@ background-color: #fff;
   color: var(--secondary-color);
   font-size: 20px;
 }
-.second-sliderItem {
+.second-sliderItem, .third-sliderItem{
   flex: 0 0 auto;
   margin-right: 20px;
   width: 450px;
@@ -222,10 +220,10 @@ background-color: #fff;
   position:relative;
   
 }
-.second-slider-wrapper {
+.second-slider-wrapper, .third-slider-wrapper {
   display: flex;
 }
-.slider-btn.second-slider-btn {
+.slider-btn.second-slider-btn , .slider-btn.third-slider-btn{
   position: absolute;
   top: 50%;
   background: none;
@@ -234,7 +232,7 @@ background-color: #fff;
   cursor: pointer;
   z-index: 10;
 }
-.second-sliderImg {
+.second-sliderImg, .third-sliderImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -263,7 +261,7 @@ background-color: #fff;
   font-weight: 500;
   cursor: pointer;
 }
-.second-sliderItem:hover .buy-btn{
+.second-sliderItem:hover .buy-btn, .third-sliderItem:hover .buy-btn{
   color: var(--secondary-color);
   transition: all 200ms ease-in-out;
   background: #CACACB;
@@ -339,7 +337,6 @@ font-weight: 500;
 .overflow-container{
   overflow-y: auto;
   height: 100vh;
-
 }
 .payment {
   background-color: #f7f7f7;
@@ -395,6 +392,30 @@ font-weight: 500;
   justify-content: center; 
   margin-top: 40px;
 }
+.jordan-container {
+  margin: 20px; 
+}
+.jordan-img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
+}
+.j-image-container {
+  overflow: hidden;
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
