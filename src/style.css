@@ -155,7 +155,7 @@ border: 2px solid var(--secondary-color) !important;
   padding: 20px 0;
   width: 100vw;
 }
-.slider:hover{
+.slider:hover {
   overflow-x: scroll;
 }
 .sliderWrapper{
@@ -404,6 +404,17 @@ font-weight: 500;
   padding: 10px; 
   box-sizing: border-box; 
 }
+.jordan-container h1{
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
 
 
 
