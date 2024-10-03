@@ -3,7 +3,6 @@ html{
 }
 body, html{
   font-family: "Inter", system-ui;
-  overflow-x: hidden;
 
 }
 body .paymentHtml{
