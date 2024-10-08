@@ -32,18 +32,66 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function redirect() {
-  window.location.href = "confirmation.html";
-}
 document.getElementById("refundForm").addEventListener("submit", function (event) {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const damaged = document.getElementById("damaged").value;
-
     if (name === "" || email === "" || damaged === "") {
       alert("Please fill in all required fields.");
       event.preventDefault(); 
     }
   });
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+    });
+
+       function validateForm() {
+         const personal = document.getElementById("personal").value;
+         const contact = document.getElementById("contact").value;
+         const phone = document.getElementById("phone").value;
+         const address = document.getElementById("address").value;
+         const cardNumber = document.getElementById("cardNumber").value;
+         const mm = document.getElementById("mm").value;
+         const yyyy = document.getElementById("yyyy").value;
+         const cvv = document.getElementById("cvv").value;
+
+         if (!personal ||!contact ||!phone 
+          || !address ||!cardNumber ||!mm ||!yyyy || !cvv
+         ) {
+           alert("Please fill in all fields before proceeding.");
+           return; 
+         }
+         redirect(); 
+       }
+          function redirect() {
+          window.location.href = "confirmation.html";
+        }
+       
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  
+
+
+
+
+    
+
+
 
 

@@ -417,6 +417,26 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+.main {
+    display: block; 
+}
+@media (max-width: 768px) {
+    .main {
+        display: none;
+    }
+    .jordan-logo{
+    display: none;
+    }
+  .home h1{
+  font-size: 30px;
+}
+.refund{
+margin: 10px;
+}
+}
+
+
+
 
 
 
