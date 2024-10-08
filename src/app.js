@@ -35,3 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function redirect() {
   window.location.href = "confirmation.html";
 }
+document.getElementById("refundForm").addEventListener("submit", function (event) {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const damaged = document.getElementById("damaged").value;
+
+    if (name === "" || email === "" || damaged === "") {
+      alert("Please fill in all required fields.");
+      event.preventDefault(); 
+    }
+  });
+
+

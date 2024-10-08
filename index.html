@@ -178,14 +178,30 @@
     <p> 067 006 0725</p>
     <br />
     <br />
-    <a href="./refunds.html">RETURNS AND EXCHANGES</a>
+    <a href="#refundForm">RETURNS AND EXCHANGES</a>
     <br />
-    <a href="./refunds.html">TRACK YOUR ORDER</a>
+    <a href="./confirmation.html#track">TRACK YOUR ORDER</a>
     <br />
     <br />
     <p>Nike. All rights reserved.</p>
   </div>
 </footer>
+<div class="refund mb-4">
+    <p>You can use the form below to log your exchange or return.</p>
+    <form id="refundForm">
+        <label class="name">Name*</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        
+        <label class="email">Email Address*</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        
+        <label class="damaged">Product Damaged*</label>
+        <input type="text" id="damaged" placeholder="Describe the damage">
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
  <script src="./src/app.js"></script>
 </body>
 </html>
