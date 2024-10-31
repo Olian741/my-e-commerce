@@ -68,12 +68,6 @@ document.getElementById("refundForm").addEventListener("submit", function (event
         }
        
 
-     
-
-
-
-
-
 
 
 
